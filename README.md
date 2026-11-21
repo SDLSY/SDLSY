@@ -7,9 +7,7 @@
 </div>
 
 <p align="center">
-  <a href="https://github.com/stablyai/orca/pulls?q=is%3Apr+author%3ASDLSY+is%3Amerged">
-    <img alt="Orca Contributor" src="https://img.shields.io/badge/stablyai%2Forca-Contributor%20(2%20Merged%20PRs)-238636?style=flat-square&logo=github" />
-  </a>
+  <a href="https://github.com/stablyai/orca/pulls?q=is%3Apr+author%3ASDLSY+is%3Amerged"><img alt="Orca Contributor" src="https://img.shields.io/badge/stablyai%2Forca-Contributor%20(2%20Merged%20PRs)-238636?style=flat-square&logo=github" /></a>
   <img alt="Focus" src="https://img.shields.io/badge/Focus-AI%20Agents%20%7C%20Multimodal%20RAG%20%7C%20Desktop%20Tooling-1f6feb?style=flat-square" />
   <img alt="Stack" src="https://img.shields.io/badge/Stack-TypeScript%20%7C%20Python%20%7C%20Kotlin-8957e5?style=flat-square" />
 </p>
