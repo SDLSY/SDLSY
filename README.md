@@ -30,15 +30,15 @@
 
 | PR | Status | Summary |
 | --- | :---: | --- |
-| [**#45539**](https://github.com/stablyai/orca/pull/45539) | ![Merged](https://img.shields.io/badge/Merged-8957e5?style=flat-square) | **Bot 群聊端到端多模态图片附件**：打通桌面剪贴板粘贴/拖拽/选图、`agent-session-attachments` 共享安全准入（`lstat`/`realpath` 防逃逸与配对远程端白名单）、多成员会话 SQLite Claim、`bots.group-attachments.v1` 能力协商、底层 Agent `image-ref` 透传以及桌面/移动端渲染 |
+| [**#45539**](https://github.com/stablyai/orca/pull/45539) | ![Merged](https://img.shields.io/badge/Merged-8957e5?style=flat-square) | **Bot 群聊端到端多模态图片附件**（[#45489](https://github.com/stablyai/orca/issues/45489)）：打通桌面剪贴板粘贴/拖拽/选图、`agent-session-attachments` 共享安全准入（`lstat`/`realpath` 防逃逸与配对远程端白名单）、多成员会话 SQLite Claim、`bots.group-attachments.v1` 能力协商、底层 Agent `image-ref` 透传以及桌面/移动端渲染 |
 | [**#45600**](https://github.com/stablyai/orca/pull/45600) | ![Merged](https://img.shields.io/badge/Merged-8957e5?style=flat-square) | **Bot 设置页 ACP 模型目录发现与远程宿主机路由修复**：将 Bot 的文件夹工作区键与 `executionHostId` 透传至模型选择器，修复 OMP / OpenCode 2.x 在 Bot Settings 与自动化配置中无法加载模型的问题 |
-| [**#46335**](https://github.com/stablyai/orca/pull/46335) | ![Merged](https://img.shields.io/badge/Merged-8957e5?style=flat-square) | **移动端 Bot 对话 Fork 选择器与 `createSupport` 探针修复**：保持 `folder:` 工作区键原样传递（不再错误拼接 `id:` 前缀），并在 terminal-default 宿主机拒绝旧探针时保留 `selector_not_found` 有界重试并继续 `agentSession.create` |
+| [**#46335**](https://github.com/stablyai/orca/pull/46335) | ![Merged](https://img.shields.io/badge/Merged-8957e5?style=flat-square) | **移动端 Bot 对话 Fork 选择器与 `createSupport` 探针修复**（[#46315](https://github.com/stablyai/orca/issues/46315)）：保持 `folder:` 工作区键原样传递（不再错误拼接 `id:` 前缀），并在 terminal-default 宿主机拒绝旧探针时保留 `selector_not_found` 有界重试并继续 `agentSession.create` |
 
 #### [`crewAIInc/crewAI`](https://github.com/crewAIInc/crewAI) — Autonomous Multi-Agent Orchestration Framework
 
 | PR | Status | Summary |
 | --- | :---: | --- |
-| [**#9638**](https://github.com/crewAIInc/crewAI/pull/9638) | ![Merged](https://img.shields.io/badge/Merged-8957e5?style=flat-square) | **A2A 服务端认证空凭据绕过与时序安全修复**：为 `SimpleTokenAuth` / `APIKeyServerAuth` 增加空 `token` / `api_key` 校验，将空 `AUTH_TOKEN` 及 `model_construct` 绕过按未授权（HTTP 401）拦截，并将密钥比对替换为 UTF-8 编码的 `hmac.compare_digest` 恒定时间比较 |
+| [**#9638**](https://github.com/crewAIInc/crewAI/pull/9638) | ![Merged](https://img.shields.io/badge/Merged-8957e5?style=flat-square) | **A2A 服务端认证空凭据绕过与时序安全修复**（[#9637](https://github.com/crewAIInc/crewAI/issues/9637)）：为 `SimpleTokenAuth` / `APIKeyServerAuth` 增加空 `token` / `api_key` 校验，将空 `AUTH_TOKEN` 及 `model_construct` 绕过按未授权（HTTP 401）拦截，并将密钥比对替换为 UTF-8 编码的 `hmac.compare_digest` 恒定时间比较 |
 
 #### [`HKUDS/LightRAG`](https://github.com/HKUDS/LightRAG) — Graph-Enhanced Retrieval-Augmented Generation (EMNLP 2025)
 
